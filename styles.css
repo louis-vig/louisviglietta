@@ -1,1 +1,19 @@
-// hello!
+body {
+   font-family: Arial, sans-serif;
+   margin: 0px;
+}
+
+.top-bar {
+   background: linear-gradient(cyan, blue);
+   font-weight: bold;
+   font-size: 32px;
+   width: auto;
+   height: 80px;
+   padding: 20px;
+   text-align: center;
+   opacity: 80%;
+}
+
+p {
+   background-color: springgreen;
+}
