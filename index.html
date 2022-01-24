@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <script>
-         function show(show, hide) {
-            document.getElementByID(show).style.display = "block";
-            document.getElementByID(show).style.display = "none";
-            return false;
-         }
-      </script>
+      <script src="scripts.js" type="text/javascript"></script>
       <title>Louis</title>
       <link rel="stylesheet" href="styles.css" />
    </head>
@@ -16,15 +10,38 @@
          <div class="name">
             Louis Viglietta
          </div>
+         <div class="top-right-info">
+            Princeton University <br />
+            Chemical and Biological Engineering
+         </div>
       </div>
       <div class="content-container">
          <div class="sidebar">
-            Sidebar
+            <div id="sidebar-title">
+               Menu
+            </div>
+            <div class="sidebar-item">
+               <a href="#" onclick="return showPage('Page1');"><div id="Page1Button">
+                  Page 1
+               </div></a>
+            </div>
+            <div class="sidebar-item">
+               <a href="#" onclick="return showPage('Page2');"><div id="Page2Button">
+                  Page 2
+               </div></a>
+            </div>
          </div>
-         <div class="main-content">
+         <div class="main-content" id="Page1">
+            <div class="page-title">About</div>
+            <div class="page-content" id="about">
+               Louis Viglietta is a member of the Class of 2024 at Princeton
+               University in the Chemical and Biological Engineering Department.
+            </div>
+         </div>
+         <div class="main-content" id="Page2">
             Main Content!
             <p>
-               I love this website!
+               Second page!
             </p>
          </div>
       </div>

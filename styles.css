@@ -12,9 +12,19 @@ div {
    height: 100px;
    width: 100%;
    display: flex;
+   justify-content: space-between;
    align-items: center;
    border-bottom: groove darkblue 5px;
-   border-bottom-style: groove;
+}
+
+.top-right-info {
+   position: relative;
+   height: auto;
+   margin-right: 30px;
+   font-size: 20px;
+   font-weight: normal;
+   text-align: right;
+
 }
 
 .name {
@@ -34,8 +44,37 @@ div {
 .sidebar {
    margin: 0px 20px 20px;
    width: 200px;
-   height: 200px;
+   height: fit-content;
    border: solid black 2px;
+   display: flex;
+   flex-flow: column;
+}
+
+.sidebar-item {
+   width: 100%;
+}
+
+.sidebar-item a {
+   width: 100%;
+   background-color: green;
+   color: black;
+}
+
+.sidebar-item a div {
+   padding: 20px;
+   width: 160px;
+}
+
+.sidebar-item:hover {
+   background-color: grey;
+}
+
+#sidebar-title {
+   padding: 20px;
+   background-color: black;
+   color: white;
+   font-weight: bold;
+   font-size: 32;
 }
 
 .main-content {
@@ -43,6 +82,35 @@ div {
    flex-grow: 1;
    height: 600px;
    border: solid blue 2px;
+   display: none;
+}
+
+.main-content div {
+   float: left;
+   margin: 20px;
+}
+
+.page-title {
+   font-size: 32px;
+   font-weight: bold;
+}
+
+.page-content {
+   font-size: 18px;
+   font-weight: normal;
+}
+
+#Page1 {
+   background-color: lightgrey;
+   display: block;
+}
+
+#Page1Button {
+   background-color: cyan;
+}
+
+#Page2 {
+   background-color: red;
 }
 
 p {
