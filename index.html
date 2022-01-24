@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
    <head>
+      <script>
+         function show(show, hide) {
+            document.getElementByID(show).style.display = "block";
+            document.getElementByID(show).style.display = "none";
+            return false;
+         }
+      </script>
       <title>Louis</title>
       <link rel="stylesheet" href="styles.css" />
    </head>
    <body>
       <div class="top-bar">
-         Louis Viglietta
+         <div class="name">
+            Louis Viglietta
+         </div>
       </div>
-      <div class="title-container">
-
+      <div class="content-container">
+         <div class="sidebar">
+            Sidebar
+         </div>
+         <div class="main-content">
+            Main Content!
+            <p>
+               I love this website!
+            </p>
+         </div>
       </div>
    </body>
 </html>
