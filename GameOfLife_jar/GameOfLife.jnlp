@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" href="GameOfLife.jnlp">
+    <information>
+        <title>Game of Life</title>
+        <vendor>Louis Viglietta</vendor>
+    </information>
+    <resources>
+        <!-- Application Resources -->
+        <j2se version="1.7+"
+              href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="GameOfLife.jar"
+            main="true" />
+
+    </resources>
+    <application-desc
+         name="Game of Life Application"
+         main-class=
+           "GameOfLife"
+         width="500"
+         height="800">
+     </application-desc>
+     <update check="background"/>
+</jnlp>
