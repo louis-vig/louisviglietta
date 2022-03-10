@@ -112,7 +112,7 @@
             args: 'foo',
             recording: getParam('recording'),
             debugPort: getParam('debugPort'),
-            connectionUrl:'http://<webswing-host-and-port>/<application_path>'
+            connectionUrl:'http://localhost:8080/gameoflife'
         }
     }
 
@@ -125,7 +125,7 @@
 <script data-webswing-global-var="webswing">
     (function (window, document) {
         var loader = function () {
-            var baseUrl = 'http://<webswing-host-and-port>/<application_path>';
+            var baseUrl = 'http://localhost:8080/gameoflife';
             baseUrl = baseUrl.indexOf("/", baseUrl.length - 1) !== -1 ? baseUrl : (baseUrl + "/");
             var xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
