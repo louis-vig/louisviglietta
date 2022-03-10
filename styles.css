@@ -1,0 +1,7 @@
+body {
+  padding-top: 60px !important;
+}
+
+#inside-jumbo {
+  display: inline-flex;
+}
