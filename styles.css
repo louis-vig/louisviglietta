@@ -1,7 +1,11 @@
 body {
-  padding-top: 100px !important;
+  padding-top: 60px !important;
 }
 
 #inside-jumbo {
   display: inline-flex;
+}
+
+#portrait {
+  border-radius: 50%;
 }
