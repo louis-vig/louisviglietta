@@ -53,7 +53,7 @@
     <!-- Gallery of cards-->
     <h1 class="mb-4">Gallery</h1>
 
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
       <div class="col">
         <div class="card h-100">
           <img class="card-img-top" src="assets/chess.jpeg" />
@@ -65,7 +65,7 @@
             <small class="text-muted">Tools: Java, Swing/AWT</small>
           </div>
           <div class="card-footer">
-            <button class="btn btn-primary" href="#chess">More</button>
+            <a class="btn btn-primary" href="#chess">More</a>
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@
             <small class="text-muted">Tools: Java, Swing/AWT</small>
           </div>
           <div class="card-footer">
-            <button class="btn btn-primary" href="#gameoflife">More</button>
+            <a class="btn btn-primary" href="#gameoflife">More</a>
           </div>
         </div>
       </div>
@@ -95,14 +95,112 @@
               Analyzes speech patterns in an individual's tweets and generates a new
               tweet using Markov chains.
             </p>
-            <small class="text-muted">Tools: Python, numpy</small>
+            <small class="text-muted">Tools: Python, NumPy</small>
           </div>
           <div class="card-footer">
-            <button class="btn btn-primary" href="#gameoflife">More</button>
+            <a class="btn btn-primary" href="#tweets">More</a>
           </div>
         </div>
       </div>
     </div>
+
+
+    <!-- project descriptions-->
+    <h1 class="mb-4">Project Descriptions</h1>
+    <h2 id="chess" class="mb-4">Chess Game</h2>
+    <div class="row row-col-md-2 mb-5 g-4">
+      <div class="col-md-4">
+        <img src="assets/chess.gif" width=100%/>
+      </div>
+      <div class="col-md-8">
+        <p>
+          I developed this project in Java in December of 2021, but am still making changes.
+          I decided to embark on this project after seeing it suggested in a YouTube video
+          as an excellent project to explore interfaces in Java and better understand inheritance.
+          Having already worked a bit in Swing/AWT after the <a href="#gameoflife">Game of Life</a> project, and
+          being most familiar with Java, I decided to continue with this setup. Taking inspiration
+          from the YouTube video, I designed and implemented the modules, and learned the necessary tools in the Swift API
+          to create the GUI.
+        </p>
+        <p>
+          The game works in one window, meaning that ideally 2 players can play by taking
+          turns in the same window. However, a possible future project is to implement
+          some form of chess AI to play against the player, making the game single player.
+        </p>
+      </div>
+    </div>
+
+    <h2 id="gameoflife" class="mb-4">Conway's Game of Life</h2>
+    <div class="row row-col-md-2 mb-5 g-4">
+      <div class="col-md-4">
+        <img src="assets/gameoflife.gif" width=100%/>
+      </div>
+      <div class="col-md-8">
+        <p>
+          I created this simulator in December of 2021. This project was inspired by a <a target="_blank" href="https://www.youtube.com/watch?v=HeQX2HjkcNo">YouTube video by Veritasium</a>
+          about the incompleteness theorem. In it, he introduced Conway's Game of Life,
+          a cellular automaton. Each cell can be "dead" or "alive." At each step of the
+          animation, a cell's status is decided by its neighbors:
+          <ul>
+            <li>
+              If it has more than 3 or less than 2 neighbors, it dies.
+            </li>
+            <li>
+              If it has 2 neighbors, it remains in whatever state it began.
+            </li>
+            <li>
+              If it has exactly 3 neighbors, it becomes alive even if it was previously dead.
+            </li>
+          </ul>
+        </p>
+        <p>
+          I was very intrigued by this idea, and felt like it was feasible to recreate it myself
+          in Java. I had never worked previously with creating graphics or GUIs in Java, but decided
+          it would be a fun project to learn those skills. I learned the basics of the Swift/AWT APIs
+          to implement the GUI and the simulator, and coded the mechanism behind the automaton.
+        </p>
+        <p>
+          The "player" begins by dragging/clicking to flip cells from dead to alive or vice versa.
+          The player can then begin the animation. There are options to stop the animation,
+          clear the board, update the board by one frame, and change the delay between frames of the animation. The player
+          can still manually update cells with the mouse while the animation is running.
+        </p>
+      </div>
+    </div>
+
+    <h2 id="tweets" class="mb-4">Tweet Generator</h2>
+    <div class="row mb-5 g-4">
+      <div class="col-12">
+        <p>
+          This project was done as part of my Math Research class in my senior year of high school.
+          I decided I wanted to research the topic of Markov chains, and decided that
+          an interesting application might be in natural language processing.
+        </p>
+        <p>
+          At the time, Donald Trump was president, and his Tweets had a very distinct vernacular.
+          I decided to create a program that analyzes his previous tweets and generates new
+          tweets in his style.
+        </p>
+        <p>
+          I first took a database of several of Trumps previous tweets. The program
+          then analyzed each word individually. For each distinct word in the data,
+          it determined which words followed it and with what probabilities. From these probabilites,
+          a transition matrix was created. Then, beginning with a seed word, a sentence was formed
+          word-by-word using the transition matrix and the previous word.
+        </p>
+        <p>
+          Given that Markov chains are stochastic, and determine their next state
+          solely from the previous state, I determined that it was not the best
+          model for speech - sentences must encode grammar and subject matter
+          in longer phrases and not single words. However, the results were comical, and it was
+          a very educational project!
+        </p>
+        <p>
+          This project won a <b>gold medal</b> at the Long Island Math Fair!
+        </p>
+      </div>
+    </div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

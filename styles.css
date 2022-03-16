@@ -9,3 +9,8 @@ body {
 #portrait {
   border-radius: 50%;
 }
+
+#chess, #gameoflife, #tweets {
+  padding-top: 60px;
+  margin-top: -60px;
+}
